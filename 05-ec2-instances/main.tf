@@ -1,5 +1,5 @@
 provider "aws" {
-  region  = "us-east-1"
+  region  = "ap-south-1"
   //version = "~> 2.46" (No longer necessary)
 }
 
@@ -38,7 +38,7 @@ resource "aws_security_group" "http_server_sg" {
   }
 }
 
-resource "aws_instance" "http_server" {
+resource "aws_instance" "Instance" {
   #ami                   = "ami-062f7200baf2fa504"
   ami                    = data.aws_ami.aws_linux_2_latest.id
   key_name               = "default-ec2"

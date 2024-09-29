@@ -50,4 +50,4 @@ resource "aws_instance" "http_server" {
 
   
   }
-}
+
